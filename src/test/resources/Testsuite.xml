@@ -1,0 +1,12 @@
+<suite name="MyTestSuite">
+    <test name="SmokeTests">
+        <groups>
+            <run>
+                <include name="smoketest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Test.LoginPositiv"></class>
+        </classes>
+    </test>
+</suite>
