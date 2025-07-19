@@ -1,13 +1,11 @@
 package Test;
 
 import BaseMethoden.BaseMethoden;
-import Pageinformation.Homepage;
-import Pageinformation.Locator;
 import dataProvider.DataProviderDoD;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Crmz extends BaseMethoden {
+public class Crmz2 extends BaseMethoden {
 
 
     @Test(dataProvider = "credentials", dataProviderClass = DataProviderDoD.class)
