@@ -53,6 +53,19 @@ public class LoginPositiv extends BaseMethoden {
 
     }
 
+//Testfall
+    @Test
+    public void LoginTestNegativ(){
+        //Homepage login;
+        homepage.enterLogin("student","Password123");
+        // homepage.UrlPruefung();
+        Assert.assertTrue(homepage.getPageResult(LOGIN)); // LOGIN weist auf final Variable hin
+        homepage.logoutClick();
+        Assert.assertFalse(homepage.getPageResult("Button"));
+
+        //homepage.logout();
+    }
+
 
 
 
