@@ -3,20 +3,21 @@ package Pageinformation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.time.Duration;
 
-import static java.lang.Thread.sleep;
 
 public class Homepage extends Locator {
     public Homepage(WebDriver driver) {
         super(driver);
+        //PageFactory.initElements(driver, this);
     }
+
 
     // ------ Methoden die angewandt werden ------
 
     //Login
     public void enterLogin(String username, String password) {
+        //System.out.println("Entering login");
         usernameField.sendKeys(username);
         passwortField.sendKeys(password);
         submitButton.click();

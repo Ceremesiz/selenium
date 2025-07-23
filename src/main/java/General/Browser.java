@@ -20,8 +20,4 @@ public class Browser {
         PageFactory.initElements(driver, this);
     }
 
-
-
-
-
 }
